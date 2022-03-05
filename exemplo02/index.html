@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<div id="form">
+    <form method=POST action="calc.php"></form>
+        <h1>Calculadora</h1>
+          <center>
+            <label for="n1">Número 1:</label>
+            <input type="number" name="txtn1" id="txtn1"> <br><br>
+            <label for="n2">Numero 2:</label>
+            <input type="number" name="txtn2" id="txtn2"><br><br>
+            <input type="submit" value="+" name="Somar" onclick="somar()" class="btn btn-primary">
+            <input type="submit" value="-" name="Subtrair" onclick="subtrair()" class="btn btn-primary">
+            <input type="submit" value="/" name="dividir" onclick="dividir()" class="btn btn-primary">
+            <input type="submit" value="*" name="Multiplicar"onclick="multiplicar()" class="btn btn-primary"></div>
+    <br><br>
     
+        </center>
+    </form>
+    <div id="res">
+        
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
